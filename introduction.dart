@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main() {
   var name = 'Voyager I';
   var year = 1977;
@@ -29,4 +31,15 @@ void main() {
   print(name);
   print(antennaDiameter);
   print(image);
+
+  print(fibonacci(20));
+
+  flybyObjects.where((name) => name.contains('turn')).forEach(print);
+
+  print(max(2, 3));
+}
+
+int fibonacci(int n) {
+  if (n == 0 || n == 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
 }

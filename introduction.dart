@@ -43,6 +43,12 @@ void main() {
 
   var voyager3 = Spacecraft.unlaunched('Voyager III');
   voyager3.describe();
+
+  final yourPlanet = Planet.mercury;
+
+  if (!yourPlanet.isGiant) {
+    print('Your planet is not a "giant planet".');
+  }
 }
 
 int fibonacci(int n) {

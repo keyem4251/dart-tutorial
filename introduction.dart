@@ -109,3 +109,9 @@ enum Planet {
   bool get isGiant =>
       planetType == PlanetType.gas || planetType == PlanetType.ice;
 }
+
+class Orbiter extends Spacecraft {
+  double altitude;
+
+  Orbiter(super.name, DateTime super.launchDate, this.altitude);
+}

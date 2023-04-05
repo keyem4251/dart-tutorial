@@ -115,3 +115,15 @@ class Orbiter extends Spacecraft {
 
   Orbiter(super.name, DateTime super.launchDate, this.altitude);
 }
+
+mixin Piloted {
+  int astranauts = 1;
+
+  void describeCrew() {
+    print('Number of astranauts: $astranauts');
+  }
+}
+
+class PiloatedCraft extends Spacecraft with Piloted {
+  PiloatedCraft(super.name, DateTime super.launchDate);
+}

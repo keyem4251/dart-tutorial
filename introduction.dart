@@ -129,7 +129,6 @@ class PiloatedCraft extends Spacecraft with Piloted {
 }
 
 class MockSpaceship implements Spacecraft {
-
   @override
   set name(String _name) {
     // TODO: implement name
@@ -155,5 +154,15 @@ class MockSpaceship implements Spacecraft {
   @override
   void describe() {
     // TODO: implement describe
+  }
+}
+
+abstract class Describable {
+  void describe();
+
+  void describeWithEmpasis() {
+    print('==========');
+    describe();
+    print('==========');
   }
 }

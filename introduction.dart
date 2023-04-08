@@ -127,3 +127,33 @@ mixin Piloted {
 class PiloatedCraft extends Spacecraft with Piloted {
   PiloatedCraft(super.name, DateTime super.launchDate);
 }
+
+class MockSpaceship implements Spacecraft {
+
+  @override
+  set name(String _name) {
+    // TODO: implement name
+  }
+
+  @override
+  // TODO: implement name
+  String get name => throw UnimplementedError();
+
+  @override
+  // TODO: implement launchDate
+  DateTime? get launchDate => throw UnimplementedError();
+
+  @override
+  set launchDate(DateTime? _launchDate) {
+    // TODO: implement launchDate
+  }
+
+  @override
+  // TODO: implement launchYear
+  int? get launchYear => throw UnimplementedError();
+
+  @override
+  void describe() {
+    // TODO: implement describe
+  }
+}

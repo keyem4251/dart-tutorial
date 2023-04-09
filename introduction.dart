@@ -50,6 +50,10 @@ void main() {
   if (!yourPlanet.isGiant) {
     print('Your planet is not a "giant planet".');
   }
+
+  if (yourPlanet.isGiant) {
+    throw StateError('is giant');
+  }
 }
 
 int fibonacci(int n) {
@@ -197,5 +201,18 @@ Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
   for (final object in objects) {
     await Future.delayed(oneSecond);
     yield '${craft.name} files by $object';
+  }
+}
+
+Future<void> describeFlybyObjects(List<String> flybyObjects) async {
+  try {
+    for (final object in flybyObjects) {
+      var description = await File('$object.txt').readAsString();
+      print(description);
+    }
+  } on IOException catch (e) {
+    print('Could not describe object: $e');
+  } finally {
+    flybyObjects.clear();
   }
 }

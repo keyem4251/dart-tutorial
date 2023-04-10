@@ -17,4 +17,10 @@ void main() {
 
   description = 'Feijoada!';
   print(description);
+
+  final finalName = 'Bob';
+  const bar = 1000000;
+  const double atm = 1.01325 * bar;
+  print(finalName);
+  print(atm);
 }

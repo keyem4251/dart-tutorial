@@ -12,4 +12,9 @@ void main() {
   int lineCount2;
   lineCount2 = 0;
   print(lineCount2);
+
+  late String description;
+
+  description = 'Feijoada!';
+  print(description);
 }

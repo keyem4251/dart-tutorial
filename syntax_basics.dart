@@ -23,4 +23,12 @@ void main() {
   const double atm = 1.01325 * bar;
   print(finalName);
   print(atm);
+
+  assert(2 + 3 == 5);
+  assert(2 - 3 == -1);
+  assert(2 * 3 == 6);
+  assert(5 / 2 == 2.5);
+  assert(5 ~/ 2 == 2);
+  assert(5 % 2 == 1);
+  assert('5/2 = ${5 ~/ 2} r ${5 % 2}' == '5/2 = 2 r 1');
 }

@@ -31,4 +31,27 @@ void main() {
   assert(5 ~/ 2 == 2);
   assert(5 % 2 == 1);
   assert('5/2 = ${5 ~/ 2} r ${5 % 2}' == '5/2 = 2 r 1');
+
+  prefix_and_postfix_inc_dec();
+}
+
+void prefix_and_postfix_inc_dec() {
+  int a;
+  int b;
+
+  a = 0;
+  b = ++a; // Increment a before b gets its value.
+  assert(a == b); // 1 == 1
+
+  a = 0;
+  b = a++; // Increment a after b gets its value.
+  assert(a != b); // 1 != 0
+
+  a = 0;
+  b = --a; // Decrement a before b gets its value.
+  assert(a == b); // -1 == -1
+
+  a = 0;
+  b = a--; // Decrement a after b gets its value.
+  assert(a != b);
 }

@@ -33,6 +33,7 @@ void main() {
   assert('5/2 = ${5 ~/ 2} r ${5 % 2}' == '5/2 = 2 r 1');
 
   prefix_and_postfix_inc_dec();
+  equality_and_relational_operators();
 }
 
 void prefix_and_postfix_inc_dec() {
@@ -54,4 +55,13 @@ void prefix_and_postfix_inc_dec() {
   a = 0;
   b = a--; // Decrement a after b gets its value.
   assert(a != b);
+}
+
+void equality_and_relational_operators() {
+  assert(2 == 2);
+  assert(2 != 3);
+  assert(3 > 2);
+  assert(2 < 3);
+  assert(3 >= 3);
+  assert(2 <= 3);
 }

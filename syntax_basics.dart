@@ -65,3 +65,11 @@ void equality_and_relational_operators() {
   assert(3 >= 3);
   assert(2 <= 3);
 }
+
+void assign_value() {
+  var a = 1;
+  a ??= 2;
+  var b = null;
+  b ??= 2;
+  print('$a, $b');
+}

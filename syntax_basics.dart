@@ -73,3 +73,11 @@ void assign_value() {
   b ??= 2;
   print('$a, $b');
 }
+
+void conditional_expressions(isPublic) {
+  var visibility = isPublic ? 'public' : 'private';
+  print(visibility);
+
+  String playerName(String? name) => name ?? 'Guest';
+  print(playerName(null));
+}

@@ -1,4 +1,4 @@
-# dart-tutorial
+# dart-tutorials
 [dart tutorials](https://dart.dev/tutorials)
 
-install brew.
+install by brew.

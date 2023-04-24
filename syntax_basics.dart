@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 void main() {
   var name = 'Bob';
 
@@ -80,4 +82,20 @@ void conditional_expressions(isPublic) {
 
   String playerName(String? name) => name ?? 'Guest';
   print(playerName(null));
+}
+
+class Paint {
+  String color;
+  double strokeCap;
+  int srokeWidth;
+
+  Paint(this.color, this.strokeCap, this.srokeWidth) {}
+}
+
+void cascade_notation() {
+  var paint = Paint('black', 1.0, 1);
+  paint
+    ..color = 'read'
+    ..srokeWidth = 2
+    ..strokeCap = 3.5;
 }

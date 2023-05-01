@@ -1,6 +1,15 @@
-import 'dart:ffi';
+/// Documentation comment
+/**
+ * Documentation commment
+ */
 
 void main() {
+  // Single line comment
+
+  /*
+    multi line comments
+   */
+
   var name = 'Bob';
 
   Object name2 = 'Bob';

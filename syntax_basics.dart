@@ -108,3 +108,11 @@ void cascade_notation() {
     ..srokeWidth = 2
     ..strokeCap = 3.5;
 }
+
+class Television {
+  // Metadata: activateを使おうとすると警告が出る
+  @deprecated
+  void activate() {
+
+  }
+}

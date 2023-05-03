@@ -25,3 +25,21 @@ void stringsExample() {
   assert('That deserves all caps. ${s.toUpperCase()} is very handy!' ==
       'That deserves all caps, STRING INTERPOLATION is very handy');
 }
+
+void collectionExample() {
+  var list = [1, 2, 3];
+  assert(list.length == 3);
+
+  var halogens = {'fluorine', 'chorine'};
+  print(halogens);
+
+  var elements = <String>{};
+  elements.addAll(halogens);
+  assert(elements.length == 2);
+
+  var gifts = {
+    'first': 'partridge',
+    'second': 'turtledoves',
+  };
+  assert(gifts.length == 2);
+}

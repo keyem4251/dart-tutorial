@@ -42,4 +42,13 @@ void collectionExample() {
     'second': 'turtledoves',
   };
   assert(gifts.length == 2);
+
+  var list2 = [1, 2, 3];
+  var list3 = [0, ...list2];
+  assert(list3.length == 4);
+
+  var nav = ['Home', 'Furniture', if (true) 'Outlet'];
+  var listOfString = ['#0', for (var i in list3) '#$i'];
+  print(nav);
+  print(listOfString);
 }
